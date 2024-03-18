@@ -1,0 +1,344 @@
+
+
+.lt-white-bg {
+    background: white;
+}
+.lt-light-gray-bg {
+    background: #fafafa;
+}
+.lt-gray-bg {
+    background: #f7f7f7;
+}
+.lt-light-black-bg {
+    background: #232222;
+}
+.lt-g-hover:hover {
+    background: #f3f3f7;
+}
+.lt-graybordered {
+    border-color: #e2e2e9 !important;
+}
+.lt-inactive-bg {
+    background: #f3f3f7 !important;
+}
+.lt-active-bg {
+    background: #9a9a9a !important;
+}
+.lt-focused {
+    border: 1px solid #9a9a9a !important;
+}
+.lt-disabled-bg {
+    background: #e2e2e9;
+}
+.lt-active-c {
+    color: #9a9a9a !important;
+}
+.lt-hover-active-bg:hover {
+    background: #9a9a9a !important;
+}
+.lt-c {
+    color: black;
+}
+.lt-coal-c {
+    color: #434343;
+}
+.lt-dark-coal-c {
+    color: #494949;
+}
+.lt-light-black-c {
+    color: #232222;
+}
+.lt-light-coal-c {
+    color: #282828
+}
+.lt-gray-c {
+    color: #9a9a9a;
+}
+.lt-header-nav::after {
+    background: black;
+}
+.lt-profile-btn:hover {
+    color: #9a9a9a;
+}
+.lt-profile-btn:hover path {
+    fill: #9a9a9a;
+}
+.lt-profile-btn:hover b {
+    color: #9a9a9a;
+}
+.lt-profile-btn:hover path {
+    fill: #9a9a9a;
+}
+.lt-cart-btn-unfilled:hover b {
+    color: #9a9a9a;
+}
+.lt-cart-btn-unfilled:hover svg path:nth-child(1) {
+    stroke: #9a9a9a;
+}
+.lt-cart-btn-unfilled:hover svg path:nth-child(2) {
+    stroke: #9a9a9a;
+    transform: translateY(-3px);
+}
+.lt-cart-btn-unfilled:hover svg path:nth-child(3),
+.lt-cart-btn-unfilled:hover svg path:nth-child(4) {
+    stroke: #9a9a9a;
+}
+
+.lt-cart-btn-filled svg path:nth-child(1) {
+    fill: black;
+}
+.lt-cart-btn-filled svg path:nth-child(3),
+.lt-cart-btn-filled svg path:nth-child(4) {
+    stroke: white;
+}
+.lt-cart-btn-filled:hover b {
+    color: #9a9a9a;
+}
+.lt-cart-btn-filled:hover svg path:nth-child(1) {
+    fill: #9a9a9a;
+    stroke: #9a9a9a;
+}
+.lt-cart-btn-filled:hover svg path:nth-child(2) {
+    stroke: #9a9a9a;
+    transform: translateY(-3px);
+}
+
+/* ЛОГОТИПЫ */
+
+.lt-selectedNeededStroke {
+    background: #9a9a9a;
+}
+.lt-selectedNeededStroke svg path {
+    stroke: #ffffff;
+}
+
+.lt-selectedNeededFill {
+    background: #9a9a9a !important;
+}
+
+.lt-selectedNeededFill svg path {
+    fill: white;
+}
+
+.lt-selectedNeededIFood {
+    background: #9a9a9a !important;
+}
+.lt-selectedNeededIFood svg g path {
+    fill: white;
+    stroke: white;
+}
+
+.lt-selectedSport {
+    background: #9a9a9a;
+}
+.lt-selectedSport svg g path:first-child {
+    fill: white;
+}
+.lt-selectedSport svg g path:not(:first-child) {
+    fill: #9a9a9a;
+}
+
+.lt-selectedNeededGusto {
+    background: #9a9a9a !important;
+}
+.lt-selectedNeededGusto svg g path {
+    fill: white;
+}
+
+.lt-neededStroke:hover {
+    background: #9a9a9a !important;
+}
+.lt-neededStroke:hover svg path {
+    stroke: white;
+}
+
+.lt-neededSport:hover {
+    background: #9a9a9a !important;
+}
+.lt-neededSport:hover svg g path:first-child {
+    fill: white;
+}
+.lt-neededSport:hover svg g path:not(:first-child) {
+    fill: #9a9a9a;
+}
+
+.lt-neededFill:hover {
+    background: #9a9a9a;
+}
+.lt-neededFill:hover svg path {
+    fill: white;
+}
+
+.lt-neededIfood:hover {
+    background: #9a9a9a !important;
+}
+.lt-neededIfood:hover svg g path {
+    fill: white;
+    stroke: white;
+}
+
+.lt-neededGusto:hover {
+    background: #9a9a9a !important;
+}
+.lt-neededGusto:hover svg g path {
+    fill: white;
+}
+.lt-gradientBtn {
+    color: black;
+    background: #fbf7f4;
+    transition: 0.3s background;
+    &:hover {
+        background: #ede9e6;
+    }
+}
+
+.lt-grayBordered {
+    border: 1px solid #e2e2e9;
+    background: transparent;
+}
+
+.lt-grayBordered input {
+    color: #434343;
+}
+.lt-grayBordered input::placeholder {
+    color: #e2e2e9;
+}
+.lt-grayBorderedDisabled {
+    background: #f3f3f7 !important;
+}
+.lt-grayBorderedLocked {
+    border: 1px solid #e2e2e9 !important;
+    background: #f3f3f7 !important;
+}
+.lt-grayBordered:hover {
+    border: 1px solid #9a9a9a;
+}
+.lt-categoriesArrow {
+    background: transparent;
+}
+.lt-categoriesArrow svg path {
+    stroke: #434343;
+}
+.lt-miniSliderArrow:hover path {
+    stroke: #9a9a9a;
+}
+.lt-shadowRight {
+    background: linear-gradient(
+        270deg,
+        #fff 0%,
+        rgba(254, 254, 254, 0.62) 44.79%,
+        rgba(252, 252, 252, 0.28) 79.17%,
+        rgba(217, 217, 217, 0) 100%
+    );
+}
+.lt-categoryItem {
+    background: white;
+    color: black;
+}
+.lt-categoryItem:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 1px 8px 0px rgba(56, 56, 56, 0.1);
+}
+.lt-categoryActive > div {
+    border: 1px solid transparent;
+    box-shadow: 0px 1px 8px 0px rgba(56, 56, 56, 0.1);
+}
+.lt-input-label-c {
+    color: black;
+}
+.lt-tranparent-bg {
+    background: transparent;
+}
+.lt-darkBorderedBtn {
+    border: 1px solid #434343;
+}
+.lt-orderInfoTop-c {
+    color: #9e9e9e;
+}
+.lt-orderInfoBottom-c {
+    color: black;
+}
+.lt-orderItemBg {
+    background: white;
+}
+
+.lt-addressItem svg:hover path {
+    fill: #9a9a9a;
+}
+.lt-selectedValue {
+    color: #434343;
+}
+.lt-whiteSelectable {
+    background: white;
+}
+.lt-whiteSelectable p {
+    color: black;
+}
+.lt-whiteSelectable:hover {
+    border: 1px solid #9a9a9a!important;
+}
+.lt-whiteSelectableSelected {
+    border: 1px solid #9a9a9a!important;
+}
+.lt-radioBorder {
+    border: 2px solid #9a9a9a !important;
+}
+.lt-restaurantItem {
+    background: transparent;
+}
+.lt-restaurantItem:hover {
+    background: #F3F3F7;
+}
+.lt-restaurantItem p, .lt-restaurantItem b, .lt-restaurantItem span {
+    color: #434343
+}
+
+.lt-sidewrapper {
+    background: white;
+    border-left: 2px solid #FAFAFA;
+    border-top: 2px solid #FAFAFA;
+    border-bottom: 2px solid #FAFAFA;
+}
+.lt-sidewrapperItem {
+    border-bottom: 2px solid #FAFAFA;
+}
+.lt-active-week b, .lt-active-week p{
+    color: #9a9a9a!important;
+}
+.lt-cart {
+    color: #494949;
+    background: #fafafa;
+}
+.lt-cartItem {
+    background: white;
+}
+.lt-window {
+    background: white;
+}
+.lt-window p,
+.lt-window label,
+.lt-window b {
+    color: black;
+}
+.lt-window h2 {
+    color: black;
+}
+.lt-window h3 {
+    color: black;
+}
+.lt-caption {
+    color: #5C6370
+}
+.lt-caption a {
+    color: #9a9a9a;
+}
+.lt-lightBtn {
+    color: #9a9a9a;
+    border: 1px solid #9a9a9a;
+}
+.lt-searchItem:hover {
+    background: #F3F3F7;
+}
+.lt-searchItem p {
+    color: #B0B0B0 !important;
+}

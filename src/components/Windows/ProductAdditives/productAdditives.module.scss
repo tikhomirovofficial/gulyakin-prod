@@ -1,0 +1,251 @@
+.additivesWindow {
+  z-index: 10;
+}
+.window {
+  padding: 2rem 3rem;
+  max-height: 60rem;
+  height: 100%;
+  max-width: 108rem;
+  padding-bottom: 0;
+  width: 100%;
+
+}
+.productImage {
+  height: 100%;
+  background-position: center;
+  flex: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.productBlockImage {
+  height: 100%;
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+  img {
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+
+  }
+}
+
+.additiveTitle {
+
+}
+
+.additiveList {
+  overflow-y: auto;
+  max-height: 25rem;
+  .item {
+    cursor: pointer;
+    background: #363844;
+    border-radius: 4px;
+    width: 10.5rem;
+    min-height: 13.8rem;
+    transition: .3s border;
+    border: 1px solid transparent;
+    max-width: 10.5rem;
+    padding: 1.5rem 1.6rem;
+    .imageWrapper {
+      min-height: 7.3rem;
+      min-width: 7.3rem;
+    }
+    .addedIconBlock {
+      visibility: hidden;
+      opacity: 0;
+      right: .7rem;
+      top: .7rem;
+    }
+
+    .img {
+      min-height: 7.3rem;
+      min-width: 7.3rem;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+    b {
+      margin-top: -3px;
+      font-size: 1.6rem;
+    }
+  }
+  .itemSelected {
+    border: 1px solid #F6CAAF;
+    .addedIconBlock {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+}
+.additiveList::-webkit-scrollbar {
+  width: 4px;
+}
+.additiveList::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+}
+.productAdditivesBar {
+  height: 100%;
+  overflow-y: auto;
+  max-height: 80%;
+  padding: 0 2.5rem;
+  width: 100%;
+  .listItem {
+    span {
+      font-size: 2rem;
+    }
+    color: white
+  }
+  .weight {
+    color: #C0C0C0;
+    min-width: 4rem;
+    text-align: right;
+    font-size: 1.4rem;
+    text-wrap: nowrap;
+  }
+  .titleBlock {
+    font-size: 2.4rem;
+  }
+  .description {
+    min-height: 6rem;
+    color:  h3 {
+    color: #c3c3c3;
+  };
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+}
+.productAdditivesBar::-webkit-scrollbar {
+  width: 4px;
+}
+.productAdditivesBar::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+}
+.close {
+  margin-right: -5px;
+}
+.supplementItem {
+  p, .price {
+    font-size: 1.6rem;
+  }
+  .price {
+    color: #BCBCBC;
+  }
+  .checkbox{
+    min-width: 1.8rem;
+    min-height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 3px;
+    height: 1.8rem;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.08);
+
+  }
+}
+.supplementsList {
+  max-height: 20rem;
+  overflow-y: auto;
+  padding-right: .6rem;
+}
+
+.supplementsList::-webkit-scrollbar {
+  width: 4px;
+}
+.supplementsList::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+}
+.additivesContainer {
+  padding-bottom: 2rem;
+  max-height: 96%;
+}
+.additivesBtnWrapper {
+  padding: 0 2.5rem;
+
+}
+.additivesBtn {
+  width: 100%;
+}
+.additivesBarContainer {
+  max-width: 42rem;
+  width: 100%;
+}
+.additivesListBlock {
+ 
+}
+@media (max-width: 1100px) {
+  .additiveList {
+    .item {
+      b {
+        font-size: 1.4rem;
+      }
+    }
+
+
+  }
+  .window {
+    border-radius: unset;
+    height: 100vh;
+    width: 100vw;
+    max-width: unset;
+    max-height: unset;
+  }
+  .drinksList {
+    padding-bottom: 8rem;
+  }
+  .additivesContainer {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .additivesListBlock {
+    padding-bottom: 8rem;
+  }
+  .productImage {
+    height: 20%;
+    max-height: 40rem;
+    min-height: 19rem;
+    width: 100%;
+  }
+  .productBlockImage {
+    height: 20%;
+    max-height: 40rem;
+    min-height: 19rem;
+    width: 100%;
+  }
+  .productAdditivesBar {
+    max-width: unset;
+    padding: 0;
+    .titleBlock {
+      font-size: 2.1rem;
+    }
+  }
+  .additivesBtnWrapper {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    padding: 0 3rem 2.6rem !important;
+    bottom: 0;
+  }
+  .additivesBarContainer {
+    width: 100%;
+    flex: 1;
+    max-width: unset;
+  }
+  .supplementsList {
+    max-height: unset;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .additivesBtnWrapper {
+    padding: 0;
+  }
+}

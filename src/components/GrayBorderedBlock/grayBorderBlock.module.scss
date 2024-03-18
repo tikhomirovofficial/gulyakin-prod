@@ -1,0 +1,30 @@
+.block {
+  border-radius: 4px;
+  padding: 0 1.8rem;
+  font-size: 1.4rem;
+  transition: .3s border;
+  input {
+    background: inherit;
+  }
+  label {
+    transition: .3s color;
+  }
+}
+.disabledBorder {
+  border: none !important;
+}
+
+.focused {
+  border: 1px solid #F8CAA9;
+}
+.error {
+  border: 1px solid #FF2000 !important;
+}
+.closed {
+  background: #F3F3F7
+}
+.disabled {
+  &:hover {
+    border: 1px solid #E2E2E9;
+  }
+}

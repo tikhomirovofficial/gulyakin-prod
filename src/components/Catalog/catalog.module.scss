@@ -1,0 +1,29 @@
+.categoryBlock {
+  .catalogPartList {
+
+  }
+}
+.notFoundedText {
+  font-size: 2.4rem;
+
+}
+@media (max-width: 1340px) {
+  .categoryBlock {
+    .catalogPartList {
+      gap: 5.5rem;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .categoryBlock {
+    .catalogPartList {
+      gap: 3rem;
+      width: 100%;
+      .catalogProductWrapper {
+        width: 100%;
+      }
+    }
+  }
+
+}

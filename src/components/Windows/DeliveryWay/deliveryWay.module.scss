@@ -1,0 +1,136 @@
+.window {
+  max-width: 108rem;
+  width: 100%;
+  max-height: 62.1rem;
+  padding: 0;
+  height: 100%;
+}
+.map {
+  flex: 1;
+  background: #868686;
+  height: 100%;
+}
+.content {
+  width: 42rem;
+  height: 100%;
+}
+.searchedMatches {
+  overflow-y: auto;
+  border-radius: 6px;
+  z-index: 9;
+  max-height: 26.9rem;
+  top: calc(100% + .5rem);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+.searchAddressItem {
+  border-radius: 4px;
+  b {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+.addressesList {
+  overflow-y: auto;
+  
+  max-height: 37rem;
+  padding-right: 3px;
+  .addressItem {
+    cursor: pointer !important;
+    svg {
+      min-width: 1.6rem
+    }
+    padding: 1.5rem 2rem;
+    .text {
+      margin-top: -3px;
+      h2 {
+        font-size: 1.8rem;
+      }
+      .timeWork {
+        font-size: 1.4rem;
+        color: #ABADBA;
+      }
+    }
+
+  }
+}
+.addressesList::-webkit-scrollbar {
+  width: 4px;
+}
+.addressesList::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+}
+
+
+.partInputBlock {
+  max-width: 16.6rem;
+}
+
+
+@media (max-width: 800px) {
+  .addressesList {
+    padding-bottom: 20rem;
+  }
+  .addressesList::-webkit-scrollbar {
+    display: none;
+  }
+  .deliveryBtnBlock {
+    position: fixed;
+    left: 0;
+    padding: 0 3rem;
+    padding-bottom: 3rem;
+    background: white;
+    bottom: 0;
+  }
+  .window {
+    height: 100vh;
+    border-radius: unset;
+    overflow-y: auto;
+    max-height: unset;
+  }
+  .deliveryBtn {
+    position: sticky;
+    bottom: 0;
+  }
+  .content {
+    width: 100%;
+    justify-content: unset;
+  }
+  .map {
+    overflow-y: auto;
+    max-height: 20rem;
+
+    min-height: 20rem;
+    .mapContainer {
+      min-height: 20rem;
+    }
+  }
+  .partInputBlock {
+    max-width: 100%;
+    min-width: 20.6rem;
+    flex: .45;
+  }
+  .map::-webkit-scrollbar {
+    display: none;
+  }
+  .deliveryWayForm {
+    padding-bottom: 21rem;
+  }
+  .deliveryWayForm::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (max-width: 493px) {
+  .inputParts {
+    flex-direction: column
+  }
+  .partInputBlock {
+    flex: 1;
+    min-width: 100%
+  }
+
+}

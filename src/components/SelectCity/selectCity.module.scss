@@ -1,0 +1,46 @@
+.logoText {
+  p {
+    font-size: 1.6rem;
+  }
+  min-width: 21rem;
+  .city {
+    color: #F6CAAF;
+    font-size: 1.6rem;
+  }
+  .geoPopup {
+    border-radius: 6px;
+    padding: 2rem 1.5rem;
+    width: 20rem;
+    left: -2rem;
+    b, p {
+      font-size: 1.6rem;
+    }
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
+    top: calc(100% + 1rem);
+  }
+  .selectCityItem {
+
+  }
+  .yourCity {
+    .btn {
+      font-size: 1.6rem;
+      padding: .4rem .4rem;
+      min-width: 7.5rem;
+    }
+  }
+
+}
+@media (max-width: 1300px) {
+  .logoText {
+    p, b {
+      font-size: 1.4rem;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .logoText {
+    .geoPopup {
+      left: 6rem;
+    }
+  }
+}

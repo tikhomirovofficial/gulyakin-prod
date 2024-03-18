@@ -1,0 +1,176 @@
+.section {
+  background: #2A2C36;
+}
+.nonSliderElement {
+  width: unset !important;
+  min-width: 12.6rem;
+  flex: 1
+}
+.logos {
+  .item {
+    cursor: pointer;
+    width: 14.5rem;
+    border-radius: 4px;
+    height: 10.5rem;
+    background: white;
+    transition: .3s background;
+    svg {
+      path {
+        transition: .3s fill, .3s stroke;
+      }
+    }
+
+  }
+  .selectedNeededStroke {
+    background: #F7C9AB;
+    svg {
+      path {
+        stroke: white;
+      }
+    }
+  }
+  .selectedNeededFill {
+    background: #F7C9AB;
+    svg {
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  .selectedNeededIFood {
+    background: #F7C9AB;
+    svg {
+      g {
+        path {
+          fill: white;
+          stroke: white;
+        }
+      }
+
+    }
+  }
+  .selectedSport {
+
+    background: #F7C9AB;
+    svg {
+      g {
+        path:first-child {
+          fill: white;
+        }
+        path:not(:first-child) {
+          fill: #F7C9AB;
+        }
+      }
+
+    }
+
+
+  }
+  .selectedNeededGusto {
+    background: #F7C9AB;
+    svg {
+      g {
+        path {
+          fill: white;
+        }
+      }
+
+    }
+  }
+  .neededStroke {
+    &:hover {
+      background: #F7C9AB;
+      svg {
+        path {
+          stroke: white;
+        }
+      }
+    }
+  }
+  .neededSport {
+    &:hover {
+      background: #F7C9AB;
+      svg {
+        g {
+          path:first-child {
+            fill: white;
+          }
+          path:not(:first-child) {
+            fill: #F7C9AB;
+          }
+        }
+
+      }
+    }
+
+  }
+  .neededFill {
+    &:hover {
+      background: #F7C9AB;
+      svg {
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+
+  .neededIfood {
+    &:hover {
+      background: #F7C9AB;
+      svg {
+        g {
+          path {
+            fill: white;
+            stroke: white;
+          }
+        }
+
+      }
+    }
+  }
+  .neededGusto {
+    &:hover {
+      background: #F7C9AB;
+      svg {
+        g {
+          path {
+            fill: white;
+          }
+        }
+
+      }
+    }
+  }
+
+}
+@media (max-width: 1340px) {
+  .logos {
+    .item {
+      width: 14.5rem;
+      height: 8.5rem;
+      svg {
+        max-height: 5rem;
+      }
+
+    }
+  }
+}
+@media (max-width: 480px) {
+  .section {
+    padding: 1.5rem 0;
+  }
+  .logos {
+
+    .item {
+      cursor: pointer;
+      width: 9rem;
+      height: 7rem;
+      svg {
+        max-width: 6.5rem;
+      }
+
+    }
+  }
+}

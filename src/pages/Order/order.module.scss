@@ -1,0 +1,274 @@
+.order {
+  margin-top: 4rem;
+  .orderContainer {
+
+  }
+  .form {
+    max-width: 37.1rem;
+    min-width: 38rem;
+    textarea {
+      resize: none;
+    }
+
+  }
+
+  .inputField {
+
+
+    input, textarea{
+      font-size: 1.6rem;
+    }
+    textarea::-webkit-scrollbar {
+      width: 2px;
+      display: none;
+      background: #e7e7e7;
+    }
+    textarea::-webkit-scrollbar-thumb {
+      background: lightgrey;
+    }
+
+  }
+
+
+
+}
+.inputField, .leftContent {
+  width: 34rem;
+}
+
+.textAreaField {
+  min-height: 10.5rem;
+}
+
+.backCart {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #e2e2e9;
+}
+
+.wayOrderBtn, .timeOrder{
+  font-size: 1.6rem;
+}
+.timeOrder {
+  max-width: 24.2rem;
+  
+}
+.toolsCount {
+  font-size: 2.4rem;
+  min-width: 3.2rem
+}
+.orderDropdownWrapper {
+  padding: .5rem;
+  overflow-y: auto;
+  color: white;
+  max-height: 20rem;
+}
+.inputChangeWith {
+}
+.orderDropdownWrapper::-webkit-scrollbar {
+  width: 4px;
+}
+.orderDropdownWrapper::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+}
+.inputSelectable {
+  text-wrap: nowrap;
+  border: 1px solid transparent;
+  font-size: 1.4rem;
+  padding: .8rem 1rem;
+}
+.orderSuccessBtn {
+
+}
+@media (max-width: 500px) {
+
+}
+.orderSelectDrop {
+  background: blue;
+}
+.orderSelect {
+  svg {
+    min-height: 10px;
+    min-width: 10px;
+    margin-left: 4px;
+  }
+}
+.timeSelect {
+  min-width: 12.5rem;
+}
+.productList{
+  max-height: 35vh;
+  overflow-y: auto;
+}
+.productList::-webkit-scrollbar {
+  width: 3px;
+  background: #f1f1f1;
+}
+.productList::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+  border-radius: 30px;
+}
+.part {
+  background: #FAFAFA;
+}
+.product {
+  .image {
+    min-width: 7.5rem;
+    background-position: center;
+    min-height: 7.5rem;
+    max-width: 7.5rem;
+    max-height: 7.5rem;
+    border-radius: 4px;
+  }
+
+
+  h4, .price {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+.compositionOrder {
+  padding: 3rem 4rem;
+  max-width: 42rem;
+  min-width: 42rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px 0px rgba(56, 56, 56, 0.05);
+  position: sticky;
+  color: #494949;
+  height: fit-content;
+  top: 20rem;
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  .info {
+    p {
+      font-size: 1.6rem;
+    }
+    b {
+      font-size: 1.8rem;
+    }
+    .productsInfo {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #E2E2E9;
+    }
+  }
+}
+.selectRestaurantItems {
+  font-size: 1.6rem;
+}
+.errorDelivery {
+  max-width: 34rem;
+  color: white;
+  p, b {
+    font-size: 1.6rem;
+  }
+}
+.selectRestaurant {
+  font-size: 1.6rem;
+  max-height: 20rem;
+  max-width: 34rem;
+  .selectRestaurantItems {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  svg {
+    min-width: 1.3rem;
+  }
+}
+.deliverySelect {
+  max-width: 34rem;
+}
+.diffCashInput {
+  max-width: 4.6rem;
+  color: #c3c3c3;
+  margin-right: .5rem;
+}
+@media (max-width: 1100px) {
+  .orderContainer {
+    flex-wrap: wrap;
+
+  }
+  .compositionOrder {
+    max-width: 34rem;
+    min-width: 34rem;
+  }
+}
+@media (max-width: 840px) {
+  .orderContainer {
+    gap: 2rem;
+    .leftContent {
+      //width: 100%;
+    }
+    .form {
+      .inputField {
+        //width: 100%;
+      }
+    }
+  }
+  .compositionOrder {
+    padding: 2rem;
+    //max-width: 34rem;
+  }
+  .selectRestaurant {
+    font-size: 1.6rem;
+    //max-width: 80vw;
+  }
+}
+@media (max-width: 600px) {
+  .createOrderBtn {
+    font-size: 1.8rem;
+  }
+  .order {
+    .form {
+      min-width: unset;
+    }
+  }
+}
+@media (max-width: 410px) {
+  .errorDelivery {
+    p, b {
+      font-size: 1.4rem;
+    }
+  }
+  .orderContainer {
+    gap: 2rem;
+    .errorDelivery {
+      width: 80vw;
+    }
+    .leftContent {
+      width: 80vw;
+    }
+    .inputChangeWith {
+      width: 80vw;
+    }
+    .form {
+      .inputField {
+        width: 80vw;
+
+      }
+    }
+  }
+  .compositionOrder {
+    padding: 2rem;
+    max-width: unset;
+    width: 80vw;
+    min-width: unset;
+    .product {
+      .image {
+        min-height: 6rem;
+        min-width: 6rem;
+        max-height: 6rem;
+        max-width: 6rem;
+      }
+    }
+  }
+  .selectRestaurant {
+    font-size: 1.6rem;
+    width: 80vw;
+  }
+}

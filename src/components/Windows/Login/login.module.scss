@@ -1,0 +1,32 @@
+.window {
+  min-width: 42rem;
+  .codePreloader {
+    b {
+      font-size: 1.4rem;
+      margin-top: -1px;
+    }
+  }
+  .codeStatusCaption {
+    min-height: 1.8rem;
+  }
+  .caption {
+    max-width: 20.7rem;
+  }
+  .codeDigitBlock {
+    height: 6.3rem;
+    padding: 0 !important;
+    width: 5.2rem;
+    input {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .codeInput {
+    font-size: 4.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .window {
+    min-width: unset;
+  }
+}

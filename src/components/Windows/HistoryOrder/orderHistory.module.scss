@@ -1,0 +1,32 @@
+.window {
+  max-height: 80vh;
+  max-width: 60rem;
+ 
+  .gray {
+    color: #9E9E9E;
+  }
+  .caption {
+    max-width: 27.5rem;
+  }
+  .status {
+    p, b {
+      font-size: 1.8rem;
+    }
+  }
+}
+.window::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 620px) {
+  .window {
+    min-height: 100vh;
+    min-width: 100vw;
+    border-radius: unset;
+    .status {
+      p, b {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

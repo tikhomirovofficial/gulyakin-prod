@@ -1,0 +1,35 @@
+.block {
+  border-radius: 4px;
+  background: rgba(118, 118, 128, 0.12);
+  min-width: fit-content;
+  font-size: 1.4rem;
+  margin-left: 10rem;
+  overflow: hidden;
+  height: 3rem;
+  margin: 0;
+  padding: .3rem;
+  .item {
+    flex: 1;
+    width: fit-content;
+    min-width: 83px;
+    position: relative;
+  }
+}
+.thumbWrapper {
+  height: 100%;
+  padding: .3rem;
+  transition: .4s transform;
+  left: 0;
+  background: transparent;
+
+}
+.selectedItem {
+  color: #434343 !important;
+}
+.thumb {
+  padding: 0 .5rem;
+  border-radius: 4px;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  background: #FFF;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);;
+}

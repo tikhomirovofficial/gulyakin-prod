@@ -1,0 +1,41 @@
+.cookiePopup {
+  left: 50%;
+  width: fit-content;
+  bottom: 1rem;
+  z-index: 90;
+  width: 91.7rem;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  transition: transform .3s;
+  transform: translateX(-50%) translateY(200%);
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(5px);
+  padding: 1rem 2rem;
+
+  .cookieText {
+    color: rgba(73, 73, 73, 1);
+  }
+}
+.cookiePopupOpened {
+  transform: translateX(-50%) translateY(0);
+
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+@media (max-width: 1100px) {
+  .cookiePopup {
+    width: 90vw;
+    svg {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+}

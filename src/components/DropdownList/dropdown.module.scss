@@ -1,0 +1,12 @@
+
+.item {
+  cursor: pointer;
+  transition: .3s background;
+  padding: .4rem 1.4rem;
+  border-radius: 4px;
+}
+.checkedItem {
+  p {
+    font-weight: 700;
+  }
+}

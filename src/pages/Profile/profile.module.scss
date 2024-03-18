@@ -1,0 +1,94 @@
+.profile {
+  margin-top: 4rem;
+  .form {
+    max-width: 37.1rem;
+  }
+  .addAddressBtn {
+    padding: 1rem 1.5rem;
+  }
+  .logoutBtn {
+    font-size: 1.4rem;
+    padding: .5rem 2.7rem;
+  }
+  .addressesBlock {
+    max-width: 34rem;
+    .addressItem {
+      p {
+        font-size: 1.4rem;
+      }
+      b {
+        font-size: 1.8rem;
+      }
+      svg {
+        path {
+          transition: .3s fill, .3s transform
+        }
+      }
+      svg:hover {
+        path:first-child {
+          transform: rotateZ(20deg) translateY(-4px) translateX(2px);
+        }
+      }
+    }
+
+
+  }
+  .addressesEmptyText {
+    font-size: 1.4rem;
+    max-width: 20rem;
+  }
+  .inputField {
+    width: 34rem;
+    input {
+      font-size: 1.6rem;
+    }
+  }
+}
+.toMenuBtn {
+  max-width: 11.6rem;
+  padding: .3rem 1.6rem;
+}
+.textHistory {
+  font-size:1.4rem;
+}
+.orderItem {
+  border-radius: 4px;
+  box-shadow: 0px 0px 12px 0px rgba(56, 56, 56, 0.05);
+  padding-right: 3rem;
+  .imgBlock {
+    .imgItem {
+      min-height: 3.8rem;
+      border-radius: 6px;
+      min-width: 4.81rem;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .orderInfoTop {
+    font-size: 1.2rem;
+    gap: 3px
+  }
+  .orderInfoBottom {
+    font-size: 1.6rem;
+    gap: 5px
+  }
+}
+@media (max-width: 430px) {
+  .orderItem {
+    .orderInfoBottom {
+      flex-direction: column;
+    }
+  }
+  .profile {
+    .form {
+      max-width: 100vw;
+      .inputField {
+        width: 80vw;
+      }
+    }
+    .addressesBlock {
+      max-width: 80vw;
+    }
+  }
+
+}

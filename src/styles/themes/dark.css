@@ -1,0 +1,246 @@
+.dk-white-bg {
+    background: #363844;
+}
+.dk-light-gray-bg {
+    background: #2a2c36;
+}
+.dk-gray-bg {
+    background: #2a2c36;
+}
+.dk-light-black-bg {
+    background: #232222;
+}
+.dk-g-hover:hover {
+    background: #363844;
+}
+.dk-graybordered {
+    border-color: #e2e2e9 !important;
+}
+.dk-inactive-bg {
+    background: #f3f3f7 !important;
+}
+.dk-active-bg {
+    background: #f6caaf !important;
+}
+.dk-focused {
+    border: 1px solid #f8caa9 !important;
+}
+.dk-disabled-bg {
+    background: #e2e2e9;
+}
+.dk-c {
+    color: white;
+}
+.dk-light-black-c {
+    color: #232222;
+}
+.dk-dark-gray-c {
+    color: #4f4f4f;
+}
+.dk-active-c {
+    color: #f6caaf !important;
+}
+.dk-hover-active-bg:hover {
+    background: #f6caaf !important;
+}
+.dk-lg-c {
+    color: #c8c7cd;
+}
+.dk-gray-c {
+    color: #c4c4c4;
+}
+.dk-header-nav::after {
+    background: white;
+}
+.dk-profile-btn:hover b {
+    color: #f6caaf !important;
+}
+.dk-profile-btn:hover path {
+    fill: #f6caaf;
+}
+.dk-cart-btn-unfilled:hover b {
+    color: #f6caaf;
+}
+.dk-cart-btn-unfilled:hover svg path:nth-child(1) {
+    stroke: #f6caaf;
+}
+.dk-cart-btn-unfilled:hover svg path:nth-child(2) {
+    stroke: #f6caaf;
+    transform: translateY(-3px);
+}
+.dk-cart-btn-unfilled:hover svg path:nth-child(3),
+.dk-cart-btn-unfilled:hover svg path:nth-child(4) {
+    stroke: #f6caaf;
+}
+
+.dk-cart-btn-filled svg path:nth-child(1) {
+    fill: white;
+}
+.dk-cart-btn-filled svg path:nth-child(3),
+.dk-cart-btn-filled svg path:nth-child(4) {
+    stroke: #363844;
+}
+.dk-cart-btn-filled:hover b {
+    color: #f6caaf;
+}
+.dk-cart-btn-filled:hover svg path:nth-child(1) {
+    fill: #f6caaf;
+    stroke: #f6caaf;
+}
+.dk-cart-btn-filled:hover svg path:nth-child(2) {
+    stroke: #f6caaf;
+    transform: translateY(-3px);
+}
+.dk-gradientBtn {
+    color: white;
+    background: #2a2c36;
+    &:hover {
+        background: rgba(0, 0, 0, 0.05) !important;
+    }
+}
+.dk-grayBordered {
+    border: 1px solid #e2e2e9;
+    background: #2a2c36;
+}
+.dk-grayBorderedDisabled {
+    background: #333 !important;
+}
+.dk-grayBorderedLocked {
+    border: 1px solid #e2e2e9 !important;
+    background: #f3f3f7 !important;
+}
+.dk-grayBorderedLocked input {
+    color: #333 !important;
+}
+
+.dk-grayBordered input {
+    color: white;
+}
+.dk-grayBordered input::placeholder {
+    color: #c3c3c3;
+}
+.dk-grayBordered:hover {
+    border: 1px solid #f8caa9;
+}
+
+.dk-categoriesArrow {
+    background: #363844 !important;
+}
+.dk-categoriesArrow svg path {
+    stroke: white;
+}
+.dk-miniSliderArrow:hover path {
+    stroke: #f6caaf;
+}
+.dk-categoryItem {
+    background: #2a2c36;
+    border: 1px solid transparent;
+    color: white;
+}
+.dk-categoryItem:hover {
+    border: 1px solid white !important;
+}
+.dk-categoryActive > div {
+    border: 1px solid #e2e2e9;
+}
+.dk-input-label-c {
+    color: #e2e2e9;
+}
+.dk-input-wrapper-bg {
+    background: #333;
+}
+
+.dk-darkBorderedBtn {
+    border: 1px solid #c3c3c3;
+}
+.dk-orderInfoTop-c {
+    color: #9e9e9e;
+}
+.dk-orderInfoBottom-c {
+    color: #c3c3c3;
+}
+.dk-orderItemBg {
+    background: #333;
+}
+.dk-addressItem svg:hover path {
+    fill: #f8caa9;
+}
+.dk-selectedValue {
+    color: #c3c3c3;
+}
+.dk-whiteSelectable {
+    background: #2a2c36;
+}
+.dk-whiteSelectable:hover {
+    border: 1px solid #fcc8a5 !important;
+}
+.dk-whiteSelectable p {
+    color: white;
+}
+.dk-whiteSelectableSelected {
+    border: 1px solid #fcc8a5 !important;
+}
+.dk-radioBorder {
+    border: 2px solid #fcc8a5 !important;
+}
+.dk-restaurantItem {
+    background: transparent;
+}
+.dk-restaurantItem:hover {
+    background: #2a2c36;
+}
+.dk-restaurantItem p,
+.dk-restaurantItem b,
+.dk-restaurantItem span {
+    color: #c3c3c3;
+}
+.dk-sidewrapper {
+    background: #2a2c36;
+    border-left: 2px solid #727272;
+    border-top: 2px solid #727272;
+    border-bottom: 2px solid #727272;
+}
+.dk-sidewrapperItem {
+    border-bottom: 2px solid #727272;
+}
+.dk-active-week b,
+.dk-active-week p {
+    color: #f6caaf !important;
+}
+.dk-cart {
+    color: #c3c3c3;
+    background: #363844;
+}
+.dk-cartItem {
+    background: #333;
+}
+.dk-window {
+    background: #2a2c36;
+}
+.dk-window p,
+.dk-window label,
+.dk-window b {
+    color: white;
+}
+.dk-window h2 {
+    color: #c4c4c4;
+}
+.dk-window h3 {
+    color: #c4c4c4;
+}
+.dk-caption {
+    color: #c3c3c3;
+}
+.dk-caption a {
+    color: #f8caa9;
+}
+.dk-lightBtn {
+    color: #c3c3c3;
+    border: 1px solid #c3c3c3;
+}
+.dk-searchItem:hover {
+    background: #363844;
+}
+.dk-searchItem p {
+    color: #B0B0B0 !important;
+}

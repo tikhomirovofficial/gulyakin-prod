@@ -1,0 +1,266 @@
+@font-face {
+    font-family: "TTChocolates";
+    src: url("../fonts/TTChocolatesRegular.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "TTChocolates";
+    src: url("../fonts/TTChocolatesBold.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "TTChocolates";
+    src: url("../fonts/TTChocolatesBoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+html {
+    font-size: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+* {
+    font-family: "TTChocolates", sans-serif !important;
+}
+.inputFieldBlock_dark {
+    background: #333;
+}
+.grayColor_dark {
+    color: #c4c4c4 !important;
+}
+.colorWhite_dark {
+    color: white !important;
+}
+.pageTop {
+    margin-top: 4rem;
+}
+main {
+    margin-top: 11rem;
+}
+body {
+}
+body::-webkit-scrollbar {
+    width: 8px;
+    background: #f1f1f1;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+    border-radius: 30px;
+}
+.wrapper {
+    max-width: 133rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+.sectionTitle {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+.App {
+    padding-top: 11rem;
+    min-height: 100vh;
+}
+.closeIcon:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+.caption {
+    font-size: 1.4rem;
+}
+
+.caption-big {
+    font-size: 1.8rem;
+}
+.validationErr {
+    color: #ff2000;
+    font-size: 1.4rem;
+}
+.inputField {
+    height: 5.6rem;
+}
+/* styles.css */
+.p-datepicker-calendar td {
+    background-color: #fff; /* Замените этот цвет на ваш пользовательский цвет фона */
+    color: #232222; /* Замените этот цвет на ваш пользовательский цвет текста */
+    font-size: 1.4rem;
+    padding: 0.6rem;
+    /* Добавьте другие пользовательские стили, как необходимо */
+}
+.p-datepicker-today span {
+    font-size: 1.4rem;
+}
+.p-datepicker-month {
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+.p-datepicker-year {
+    font-size: 1.6rem;
+}
+.p-datepicker-header {
+    border-bottom: unset !important;
+}
+.p-datepicker {
+    padding: 1.5rem;
+}
+.p-inputtext {
+    border: unset;
+    outline: unset;
+}
+.p-datepicker-calendar th {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.p-inputwrapper-filled {
+    border: unset;
+    outline: unset;
+    box-shadow: unset;
+}
+@media (max-width: 598px) {
+    .p-datepicker {
+        left: 10vw !important;
+    }
+}
+.todayCalendar {
+    color: green;
+}
+
+.inactiveColor {
+    color: #e2e2e9;
+}
+.dropDown {
+    z-index: 5;
+    top: 100%;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.closeWrapper {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalAbsoluteClose {
+    right: 2rem;
+    z-index: 3;
+    top: 2rem;
+}
+.colorRed {
+    color: #fcc8a5 !important;
+}
+.colorError {
+    color: #ff2000 !important;
+}
+
+.svgRedStroke path {
+}
+.miniSliderArrow path {
+    transition: 0.3s stroke;
+}
+.miniSliderArrow:hover path {
+    stroke: #fb634d;
+}
+.sliderArrowCircle:hover path {
+    fill: #fb634d;
+}
+.sliderArrowCircle path {
+    transition: 0.3s fill;
+}
+.sliderArrowCircle svg {
+    transition: 0.3s transform;
+}
+.sliderArrowCircle:hover svg {
+    transform: translateX(2px);
+}
+.cur-grabbing {
+    cursor: grabbing;
+}
+.hoverRedPath {
+    transition: 0.3s fill;
+}
+.whiteSelectable {
+    border-radius: 4px;
+
+    box-shadow: 0px 1px 8px 0px rgba(56, 56, 56, 0.1);
+    border: 1px solid transparent;
+    transition:
+        0.3s border,
+        0.3s box-shadow;
+    cursor: pointer;
+}
+
+.miniScrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+.miniScrollbar::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+}
+.errorBlock {
+    border-radius: 4px;
+    background: #FF2000;
+}
+.whiteSelectable:hover {
+    border: 1px solid #fcc8a5;
+}
+.whiteSelectableSelected {
+    border: 1px solid #fcc8a5 !important;
+}
+.bigSectionTitle {
+    color: #4d4d4d;
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+.saleLine {
+    width: calc(100% + 0.5rem);
+    border-radius: 2px;
+    top: 65%;
+    transform: rotateZ(-12deg) translateY(-70%) translateX(34%);
+    height: 1px;
+    left: -50%;
+    background: #ff2000;
+}
+.sale {
+    margin-top: 0.6rem;
+}
+.text-cancel {
+    text-decoration: line-through;
+}
+.sale strong {
+    font-size: 1.2rem !important;
+}
+
+@media (max-width: 1340px) {
+    .wrapper {
+        max-width: 1070px;
+    }
+}
+@media (max-width: 1100px) {
+    .wrapper {
+        max-width: 860px;
+    }
+    .App {
+        padding-top: 9rem;
+    }
+}
+@media (max-width: 820px) {
+    .wrapper {
+        max-width: 660px;
+        padding: 0 2rem;
+    }
+}
+@media (max-width: 820px) {
+    .sectionTitle {
+        font-size: 2.4rem;
+    }
+    .bigSectionTitle {
+        font-size: 3.8rem;
+    }
+}

@@ -1,0 +1,28 @@
+.window {
+  max-height: 80vh
+}
+.shortInput {
+  max-width: 16rem;
+}
+.newAddressBtn {
+
+}
+@media (max-width: 500px) {
+  .window {
+    max-height: unset;
+    height: 100vh;
+    width: 100vw;
+    max-width: unset;
+    border-radius: unset;
+  }
+  .newAddressBtn{
+    position: sticky;
+    bottom: 0;
+  }
+}
+@media (max-width: 402px) {
+  .shortInput {
+    max-width: unset;
+    width: 100%;
+  }
+}

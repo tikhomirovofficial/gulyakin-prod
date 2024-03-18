@@ -1,0 +1,679 @@
+.header, .headerMobile {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
+.addedPopup {
+  width: 26.6rem;
+  right: 0;
+  transform: translateX(200vw);
+  z-index: 9999;
+  visibility: visible;
+  opacity: 0;
+  height: fit-content;
+  padding: 2rem 3rem;
+  font-size: 1.6rem;
+  border-radius: 7px;
+  color: "#434343";
+  background: white;
+  box-shadow: 0px 0px 12px 0px rgba(56, 56, 56, 0.10);
+  top: calc(100% + 2rem);
+
+}
+.addedTextColor {
+  color: #434343 !important;
+}
+.addedDimensions {
+  text-wrap: nowrap;
+}
+.addedPopupOpened {
+  opacity: 1;
+  visibility: visible;
+  transform: unset;
+}
+.header {
+
+  .logoText {
+    min-width: 25rem;
+    
+    p {
+      font-size: 1.6rem;
+    }
+    .city {
+      font-size: 1.6rem;
+    }
+    .geoPopup {
+      border-radius: 6px;
+      padding: 2rem 1.5rem;
+      width: 20rem;
+      left: -2rem;
+      b, p {
+        font-size: 1.6rem;
+       
+      }
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
+      top: calc(100% + 1rem);
+    }
+    .selectCityItem {
+
+    }
+    .yourCity {
+      .btn {
+        font-size: 1.6rem;
+        padding: .4rem .4rem;
+        min-width: 7.5rem;
+      }
+    }
+
+  }
+
+  nav {
+    width: 66.1rem;
+
+    .item {
+      font-size: 1.4rem;
+      color: "white";
+
+      &::after {
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s visibility, .3s opacity, .3s width;
+        content: "";
+        top: calc(100% + .3rem);
+        height: 2px;
+        width: 1px;
+        position: absolute;
+        left: 0;
+
+      }
+      .text {
+        transition: .3s font-weight;
+        min-width: calc(100% + 1rem);
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+          opacity: 1;
+          width: calc(100% + .5rem);
+        }
+        .text {
+          font-weight: 700;
+        }
+
+      }
+    }
+  }
+
+  .right {
+    b {
+      font-size: 1.6rem;
+
+    }
+
+    .profileBtn {
+      transition: .2s color;
+      path {
+        transition: .2s fill;
+      }
+      svg {
+        transition: .2s transform;
+      }
+      &:hover {
+        svg {
+          transform: scale(1.1);
+        }
+      }
+    }
+   
+
+    .cartBtn {
+      transition: .2s color;
+      b {
+        text-align: end;
+      }
+      svg {
+        path {
+          transition: .2s fill, .2s stroke, .2s transform;
+        }
+      }
+
+    }
+    .cartBtnUnfille {
+      &:hover {
+        color: #F6CAAF;
+        svg {
+
+          path:nth-child(1) {
+            stroke: #F6CAAF;
+          }
+          path:nth-child(2) {
+            stroke: #F6CAAF;
+            transform: translateY(-3px);
+          }
+          path:nth-child(3), path:nth-child(4){
+            stroke: #F6CAAF;
+          }
+        }
+      }
+    }
+    .cartBtnFille {
+      svg {
+        path:nth-child(1) {
+          fill: white;
+        }
+        path:nth-child(3), path:nth-child(4){
+          stroke: #363844;
+        }
+      }
+      &:hover {
+        color: #F6CAAF;
+        svg {
+
+          path:nth-child(1) {
+            fill: #F6CAAF;
+            stroke: #F6CAAF;
+          }
+          path:nth-child(2) {
+            stroke: #F6CAAF;
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  }
+}
+.headerMobile {
+  .btnRests {
+    height: 3.8rem;
+    padding: 1.5rem;
+    svg {
+      height: 18px;
+      width: 17px;
+    }
+    p {
+      font-size: 1.3rem;
+      text-wrap: nowrap;
+    }
+  }
+}
+.promo {
+  padding-bottom: 4rem;
+  background: #2A2C36;
+  .promos {
+    .container {
+      .item {
+        overflow: hidden;
+        background: white;
+        max-width: 31rem;
+        min-height: 18.3rem;
+        border-radius: 4px;
+        border: 1px solid #FAFAFA;
+        transition: .3s border;
+        .image {
+          height: 11rem;
+          background-position: center;
+        }
+        .info {
+          h3 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+          svg {
+            transition: .3s transform;
+            path {
+              transition: .3s fill;
+            }
+          }
+        }
+        &:hover {
+          border: 1px solid #FB634D;
+          svg {
+            transform: translateX(5px);
+            path {
+              fill: #FB634D;
+            }
+          }
+        }
+
+      }
+    }
+    .salesArrowLeft {
+      left: -2rem;
+
+    }
+    .salesArrowRight {
+      right: -2rem;
+    }
+    .arrowWrapper {
+      z-index: 3;
+      .arrow {
+        height: 4rem;
+        width: 4rem;
+        background: white;
+        border-radius: 50%;
+      }
+    }
+  }
+
+}
+@media (max-width: 470px) {
+  .promo {
+    .promos {
+      .arrowWrapper {
+        display: none;
+      }
+      .container {
+        .item {
+          max-width: 22rem;
+          max-height: 14rem;
+          min-height: unset;
+          .image {
+            height: 6.6rem
+          }
+          .info {
+            padding: 1.4rem .8rem;
+            h3 {
+              font-size: 1.4rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+.searchedQuery {
+  font-size: 3.2rem;
+  margin: 2rem 0;
+}
+
+.menuCategories {
+  position: sticky;
+  z-index: 3;
+  margin: 1.5rem 0;
+  top: 11rem;
+  .shadowRight {
+    z-index: 9;
+    width: 3rem;
+    height: 100%;
+    margin-right: -2px;
+    background: linear-gradient(270deg, #FFF 0%, rgba(254, 254, 254, 0.62) 44.79%, rgba(252, 252, 252, 0.28) 79.17%, rgba(217, 217, 217, 0.00) 100%);
+  }
+  .shadowRightDark {
+    width: 3rem;
+
+  }
+ 
+  .item {
+    margin: .5rem 0;
+    padding: .7rem 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: .3s border, .3s box-shadow;
+  
+  }
+}
+.main {
+
+  .block {
+    .restaurants {
+      .orderTrigger {
+        cursor: pointer;
+        height: 4.8rem;
+        border-radius: 4px;
+        transition: .3s box-shadow;
+        &:hover {
+          box-shadow: 0px 0px 12px 0px rgba(56, 56, 56, 0.10);
+        }
+        background: linear-gradient(90deg, #F5F3F2 0.04%, #F5F3F2 48.98%, #F5F3F2 100%);
+        .backgrounds {
+          width: 55%;
+          mix-blend-mode: darken;
+        }
+        .text {
+          transform: rotate(-7.5deg);
+          font-size: 1.6rem;
+          font-style: italic;
+          font-weight: 700;
+          p:last-child {
+            margin-left: 5rem;
+            margin-top: -.5rem;
+          }
+        }
+      }
+      .btn {
+        border-radius: 4px;
+        height: 4.8rem;
+        font-size: 1.4rem;
+      }
+      .search {
+        height: 4.8rem;
+        width: 37.5rem;
+      }
+    }
+
+    .oftenOrdered {
+      h3 {
+        font-size: 2.4rem;
+        font-weight: 400;
+      }
+      .item {
+
+        border-radius: 4px;
+        background: #F7F7F7;
+        max-height: 9.8rem;
+        height: 9.8rem;
+        width: 24.4rem;
+        overflow: hidden;
+        color: #494949;
+        box-shadow: 0px 0px 12px 0px rgba(56, 56, 56, 0.10);
+        transition: .3s box-shadow;
+        cursor: pointer;
+        .bg {
+          background-size: cover;
+          width: 10rem;
+          background-position-y: center;
+          background-position-x: center;
+        }
+        .addedIconBlock {
+          top: 0;
+          b {
+            font-size: 1.2rem;
+          }
+        }
+        .info {
+          font-size: 1.5rem;
+          width: 60%;
+          padding: 1.8rem 0;
+          align-self: center;
+
+        }
+        h4 {
+          font-size: 1.6rem;
+          line-height: 1;
+        }
+        &:hover {
+          box-shadow: 0px 4px 12px 0px rgba(56, 56, 56, 0.10);
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  color: white;
+  margin-top: 10rem;
+  nav {
+    border-bottom: 1px solid #303030;
+    padding-bottom: 4rem;
+    .navItem {
+      font-size: 1.8rem;
+      max-width: 18rem;
+    }
+
+    .navColumn:last-child {
+      flex: 1;
+    }
+    .socials {
+      .item {
+        background: #3A3A3A;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+      }
+    }
+
+    gap: 13rem;
+  }
+  .copyright {
+    color: #555;
+    max-width: 75rem;
+    font-size: 1.8rem;
+  }
+  .created {
+    gap: 3px;
+    p {
+      color: #8F8F8F;
+      font-size: 1.4rem;
+    }
+  }
+  .logo {
+    path {
+      fill: white;
+    }
+  }
+
+}
+@media (max-width: 1340px) {
+
+
+    .header {
+
+    .block {
+      .left {
+        gap: 1rem;
+      }
+      gap: 2rem;
+    }
+    nav {
+      width: unset;
+      gap: 1.2rem;
+      max-height: 1.4rem;
+      justify-content: center;
+
+      .item {
+        font-size: 1.3rem;
+      }
+    }
+    .logoText {
+      min-width: 15rem;
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    .right {
+      gap: 1.5rem;
+      b {
+        font-size: 1.4rem;
+      }
+
+    }
+  }
+  .main {
+    .block {
+      .oftenOrdered {
+        h3 {
+          font-size: 2.4rem;
+          font-weight: 400;
+        }
+        .item {
+          border-radius: 4px;
+          background: #F7F7F7;
+          max-height: 9.8rem;
+          height: 8.8rem;
+          width: 18.4rem;
+          overflow: hidden;
+          color: #494949;
+          box-shadow: 0px 4px 12px 0px rgba(56, 56, 56, 0.10);
+          .info {
+            font-size: 1.4rem;
+            width: 60%;
+            padding: 1.4rem 0;
+            align-self: center;
+
+          }
+          h4 {
+            font-size: 1.5rem;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+
+    nav {
+
+      gap: 8rem;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .addedPopupOpened {
+    transform: translateY(-100%);
+  }
+  .menuCategories {
+    top: 9rem;
+  }
+  .main {
+    .block {
+      .restaurants {
+        .btn {
+         display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 820px) {
+  .comboCatalogWrapper {
+    gap: unset;
+  }
+  .main {
+    .block {
+      .restaurants {
+        .search {
+          width: 100%;
+        }
+        flex-direction: column;
+        .orderTrigger {
+          padding: .5rem;
+        }
+      }
+    }
+
+  }
+  .footer {
+    nav {
+      width: unset;
+      gap: 5rem;
+      justify-content: space-between;
+
+      .item {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+@media (max-width: 530px) {
+  nav {
+    flex-direction: column;
+  }
+  .navColumnContacts {
+    order: -1;
+  }
+  .navLogoColumn {
+    order: -1;
+  }
+}
+@media (max-width: 480px) {
+  .searchedQuery {
+    font-size: 2.4rem;
+    margin: 1rem 0;
+  }
+  .headerMobile {
+
+    .block {
+      .left {
+        gap: 20px;
+      }
+      gap: 0px;
+    }
+  }
+  .main {
+    .block {
+      .oftenOrdered {
+        .item {
+          border-radius: 4px;
+          background: #F7F7F7;
+          max-height: 9.8rem;
+          height: 9.8rem;
+          width: 24.4rem;
+          overflow: hidden;
+          color: #494949;
+          box-shadow: 0px 4px 12px 0px rgba(56, 56, 56, 0.10);
+          .bg {
+            background-size: contain;
+            height: 100%;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            max-width: 10rem;
+            background-position-y: center;
+            background-position-x: 0;
+          }
+          .info {
+            font-size: 1.6rem;
+            width: 60%;
+            padding: 1.4rem 0;
+            align-self: center;
+
+          }
+          h4 {
+            font-size: 1.6rem;
+            line-height: 1;
+          }
+        }
+      }
+    }
+    .menuCategories {
+      margin: unset;
+    }
+    .block {
+
+      .restaurants {
+        gap: 1rem;
+        .search {
+          width: 100%;
+        }
+
+        flex-direction: column;
+
+        .orderTrigger {
+          .backgrounds {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .navLogoColumn {
+      margin-top: 5px;
+    }
+    .block {
+      gap: 2rem;
+    }
+    nav {
+      gap: 1.5rem;
+      padding-bottom: 2rem;
+      .socials {
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #303030;
+      }
+    }
+    .block {
+
+    }
+  }
+}
+

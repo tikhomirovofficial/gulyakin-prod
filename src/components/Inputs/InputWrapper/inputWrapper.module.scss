@@ -1,0 +1,46 @@
+.block {
+  border-radius: 4px;
+  border: 1px solid #e2e2e9;
+  font-size: 1.4rem;
+  transition: 0.3s border;
+
+  label {
+    transition: 0.3s color;
+  }
+  input {
+    color: "red";
+  }
+  &:hover {
+    border: 1px solid #fb634d;
+  }
+}
+.textField {
+  max-width: 85%;
+  font-size: 1.6rem;
+  background: inherit;
+}
+.input {
+  max-width: 80%;
+  background: transparent;
+}
+.textArea {
+  padding: 1.6rem !important;
+}
+
+.errorTextColor {
+  color: #ff2000 !important;
+}
+.close {
+  min-height: 100%;
+}
+// .lockedBlock {
+//   border: 1px solid #575151;
+//   input {
+//     color: #434343;
+    
+//   }
+//   background: #f3f3f7 !important;
+// }
+.label {
+  font-size: 1.4rem;
+}

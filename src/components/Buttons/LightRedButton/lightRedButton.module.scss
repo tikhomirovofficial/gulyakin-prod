@@ -1,0 +1,16 @@
+.button {
+  border-radius: 4px;
+  background: transparent;
+  font-weight: 700;
+  transition: .3s filter;
+  cursor: pointer;
+  font-size: 2rem;
+
+  &:hover {
+    filter: brightness(95%);
+  }
+  &:disabled {
+    background: #E2E2E9;;
+    color: #ABADBA;
+  }
+}
